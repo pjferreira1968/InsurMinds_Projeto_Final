@@ -1,0 +1,15 @@
+.env
+*.pem
+*.key
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+.venv/
+venv/
+data/temporarios/
+data/entrada/*
+data/processados/*
+data/relatorios/*
+*.log
+*.sqlite
+tmp/
