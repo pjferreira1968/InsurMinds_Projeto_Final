@@ -6,10 +6,14 @@ __pycache__/
 .ruff_cache/
 .venv/
 venv/
-data/temporarios/
+data/temporarios/*
 data/entrada/*
 data/processados/*
 data/relatorios/*
+!data/temporarios/.gitkeep
+!data/entrada/.gitkeep
+!data/processados/.gitkeep
+!data/relatorios/.gitkeep
 *.log
 *.sqlite
 tmp/
