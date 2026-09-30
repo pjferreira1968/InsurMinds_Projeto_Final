@@ -29,6 +29,7 @@ Apólices D&O são extensas, jurídicas e difíceis de comparar manualmente. O P
 ## Instalação
 
 ```bash
+git clone https://github.com/pjferreira1968/InsurMinds_Projeto_Final.git PfCompara
 cd PfCompara
 python -m venv .venv
 .venv\Scripts\activate
@@ -37,6 +38,7 @@ copy .env.example .env
 ```
 
 Em Linux ou macOS, use `source .venv/bin/activate` e `cp .env.example .env`.
+Ao usar **Download ZIP** no GitHub, renomeie a pasta extraída para `PfCompara` antes de executar os comandos.
 
 ## PostgreSQL
 
