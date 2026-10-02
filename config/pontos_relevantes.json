@@ -1,0 +1,26 @@
+{
+  "versao": 2,
+  "descricao": "Critérios e pesos usados no modo Relevante. O campo peso pode ser alterado manualmente de 1 a 10, sem mudança no código.",
+  "escala_peso": {
+    "minimo": 1,
+    "maximo": 10,
+    "orientacao": "Valores financeiros recebem os maiores pesos. Quanto maior o peso, maior a influência do ponto no parecer."
+  },
+  "pontos": [
+    {"id": "limites", "rotulo": "Limites e sublimites", "peso": 10, "regra_avaliacao": "maior_valor", "categorias": ["limites"], "palavras_chave": ["lmi", "limite", "sublimite"]},
+    {"id": "franquias", "rotulo": "Franquias e retenções", "peso": 9, "regra_avaliacao": "menor_valor", "categorias": ["franquias"], "palavras_chave": ["franquia", "retenção", "participação obrigatória", "pos"]},
+    {"id": "vigencia", "rotulo": "Período de vigência", "peso": 3, "regra_avaliacao": "equivalencia", "categorias": ["vigencia"], "palavras_chave": ["início de vigência", "fim de vigência"]},
+    {"id": "retroatividade", "rotulo": "Base de reclamações e retroatividade", "peso": 7, "regra_avaliacao": "presenca", "categorias": ["clausulas"], "palavras_chave": ["claims made", "base de reclamações", "retroatividade", "data limite"]},
+    {"id": "prazos", "rotulo": "Prazos adicionais", "peso": 4, "regra_avaliacao": "presenca", "categorias": ["clausulas"], "palavras_chave": ["prazo adicional", "prazo complementar", "prazo suplementar"]},
+    {"id": "defesa", "rotulo": "Custos de defesa", "peso": 8, "regra_avaliacao": "presenca", "categorias": ["coberturas", "clausulas"], "palavras_chave": ["custos de defesa", "honorários", "consentimento prévio", "adiantamento"]},
+    {"id": "exclusoes", "rotulo": "Exclusões críticas", "peso": 8, "regra_avaliacao": "equivalencia", "categorias": ["exclusoes"], "palavras_chave": ["ato doloso", "fraude", "sanções", "reclamação conhecida"]},
+    {"id": "territorio", "rotulo": "Âmbito territorial", "peso": 5, "regra_avaliacao": "equivalencia", "categorias": ["clausulas"], "palavras_chave": ["territorial", "jurisdição", "mundial", "estados unidos", "canadá"]},
+    {"id": "extensoes", "rotulo": "Extensões adicionais", "peso": 5, "regra_avaliacao": "presenca", "categorias": ["coberturas"], "palavras_chave": ["investigação", "indisponibilidade de bens", "herdeiros"]},
+    {"id": "indenizacao", "rotulo": "Forma de indenização", "peso": 7, "regra_avaliacao": "equivalencia", "categorias": ["clausulas", "coberturas"], "palavras_chave": ["reembolso", "pagamento direto", "indenização", "tomador"]},
+    {"id": "cobertura_a", "rotulo": "Cobertura A - administrador não reembolsado", "peso": 8, "regra_avaliacao": "presenca", "categorias": ["coberturas"], "palavras_chave": ["cobertura a", "administrador não reembolsado", "responsabilidade pessoal"]},
+    {"id": "cobertura_b", "rotulo": "Cobertura B - reembolso à entidade", "peso": 7, "regra_avaliacao": "presenca", "categorias": ["coberturas"], "palavras_chave": ["cobertura b", "reembolso à entidade", "reembolso à sociedade"]},
+    {"id": "cobertura_c", "rotulo": "Cobertura C - responsabilidade da entidade", "peso": 6, "regra_avaliacao": "presenca", "categorias": ["coberturas"], "palavras_chave": ["cobertura c", "responsabilidade da entidade", "mercado de capitais"]},
+    {"id": "multas_penalidades", "rotulo": "Multas e penalidades seguráveis", "peso": 6, "regra_avaliacao": "presenca", "categorias": ["coberturas"], "palavras_chave": ["multa", "multas", "penalidade", "penalidades"]},
+    {"id": "gerenciamento_crise", "rotulo": "Gerenciamento de crise", "peso": 5, "regra_avaliacao": "presenca", "categorias": ["coberturas"], "palavras_chave": ["gerenciamento de crise", "gestão de crise", "despesas de publicidade"]}
+  ]
+}

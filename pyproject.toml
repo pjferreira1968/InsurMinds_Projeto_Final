@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "insurminds_projeto_final"
+version = "0.1.0"
+description = "Produto IA4Seg para análise e comparação de apólices D&O com OCR e IA Generativa."
+requires-python = ">=3.11"
+readme = "README.md"
+license = { text = "MIT" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["../InsurMinds_Projeto_Final_Apoio/desenvolvimento/tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+src = ["src", "scripts", "../InsurMinds_Projeto_Final_Apoio/desenvolvimento/tests", "../InsurMinds_Projeto_Final_Apoio/ferramentas"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "ANN"]
+ignore = ["ANN101", "ANN102"]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
